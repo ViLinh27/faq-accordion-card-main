@@ -75,6 +75,24 @@ body {
 
 .card__text {
   width: 50%;
+  margin: 1rem 1rem;
+  color: #4a4b5e;
+}
+
+p {
+  font-size: 12px;
+  color: #787887;
+}
+
+.accordion {
+  border: none;
+  background-color: transparent;
+  font-weight: 700;
+}
+
+.active,
+.accordion:hover {
+  color: #4a4b5e;
 }
 
 .attribution {
