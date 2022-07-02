@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Lexend+Deca&display=swap');
+
+body {
+    /*background gradient*/
+    background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    /*violet to blue*/
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+
+    /*text*/
+    /* font-family: 'Inter', sans-serif; */
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+
+    /*center things in screen*/
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: absolute;
+}
+
+.card {
+    background-color: white;
+    border-radius: 1rem;
+    height:60%;
+    width: 70%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+
+    &__illustration {
+        width:50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    &__text{
+        width: 50%;
+    }
+}
+
+.attribution {
+    text-align: center;
+    font-size: 11px;
+    margin-top: 1rem;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    /*links*/
+}

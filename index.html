@@ -8,33 +8,70 @@
   
   <title>Frontend Mentor | FAQ Accordion Card</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="./design/sassStyles.css">
 </head>
 <body>
-  How many team members can I invite?
-  You can invite up to 2 additional users on the Free plan. There is no limit on 
-  team members for the Premium plan.
+  <div class="card">
+    <div class="card__illustration">
+      <img src="./images/illustration-box-desktop.svg" alt="box" class="">
+      <img src="./images/illustration-woman-online-desktop.svg" alt="illustration" class="">
+    </div><!--end of card illustration-->
+    <div class="card__text">
+      <div class="card__text__header">
+        <h1>FAQ</h1>
+      </div><!--end of card text header-->
 
-  What is the maximum file upload size?
-  No more than 2GB. All files in your account must fit your allotted storage space.
+      <div class="card__text__accordion">
+        <!--panel 1-->
+        <div class="card__text__accordion__header">
+          How many team members can I invite?
+        </div>
+        <div class="card__text__accordion__content">
+          You can invite up to 2 additional users on the Free plan. There is no limit on
+          team members for the Premium plan.
+        </div>
 
-  How do I reset my password?
-  Click “Forgot password” from the login page or “Change password” from your profile page.
-  A reset link will be emailed to you.
+        <!--panel 2-->
+        <div class="card__text__accordion__header">
+          What is the maximum file upload size?
+        </div>
+        <div class="card__text__accordion__content">
+          No more than 2GB. All files in your account must fit your allotted storage space.
+        </div>
 
-  Can I cancel my subscription?
-  Yes! Send us a message and we’ll process your request no questions asked.
+        <!--panel 3-->
+        <div class="card__text__accordion__header">
+          How do I reset my password?
+        </div>
+        <div class="card__text__accordion__content">
+          Click “Forgot password” from the login page or “Change password” from your profile page.
+          A reset link will be emailed to you.
+        </div>
 
-  Do you provide additional support?
-  Chat and email support is available 24/7. Phone lines are open during normal business hours.
+        <!--panel 4-->
+        <div class="card__text__accordion__header">
+          Can I cancel my subscription?
+        </div>
+        <div class="card__text__accordion__content">
+          Yes! Send us a message and we’ll process your request no questions asked.
+        </div>
+        
+        <!--panel 5-->
+        <div class="card__text__accordion__header">
+          Do you provide additional support?
+        </div>
+        <div class="card__text__accordion__content">
+          Chat and email support is available 24/7. Phone lines are open during normal business hours.
+        </div>
+      </div><!--end of card text accordion-->
+
+    </div><!--end of card text-->
+  </div><!--end of card-->
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div><!--end of attribution-->
+
 </body>
 </html>
