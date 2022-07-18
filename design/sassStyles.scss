@@ -54,12 +54,16 @@ body {
         color: hsl(237, 12%, 33%);
 
         &__accordion {
+            cursor: pointer;
+            outline: none;
+            transition: 0.4s
+            ;
             &__header {
                 font-size: 14px;
                 border-bottom: 1px;
             }
 
-            &__content {
+            &__content { /*in the accordion panel*/
                 padding: 0 1rem;
                 display: none;
                 overflow: hidden;
