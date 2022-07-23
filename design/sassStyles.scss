@@ -53,25 +53,25 @@ body {
         margin: 1rem 1rem;
         color: hsl(237, 12%, 33%);
 
-        &__accordion {
-            cursor: pointer;
-            outline: none;
-            transition: 0.4s
-            ;
-            &__header {
-                font-size: 14px;
-                border-bottom: 1px;
-            }
+        // &__accordion {
+        //     cursor: pointer;
+        //     outline: none;
+        //     transition: 0.4s
+        //     ;
+        //     &__header {
+        //         font-size: 14px;
+        //         border-bottom: 1px;
+        //     }
 
-            &__content { /*in the accordion panel*/
-                padding: 0 1rem;
-                display: none;
-                overflow: hidden;
+        //     &__content { /*in the accordion panel*/
+        //         padding: 0 1rem;
+        //         display: none;
+        //         overflow: hidden;
 
-                font-size: 12px;
-                color: hsl(240, 6%, 50%);
-            }
-        }
+        //         font-size: 12px;
+        //         color: hsl(240, 6%, 50%);
+        //     }
+        // }
     }
 }
 
@@ -82,11 +82,21 @@ body {
     font-weight: 700;
     outline: none;
     transition: 0.4s;
+    cursor: pointer;
+    text-align: left;
+
 }
 
 .active,
 .accordion:hover {
     color: hsl(237, 12%, 33%);
+}
+
+.panel {
+    display: none;
+    overflow: hidden;
+    font-size: 12px;
+    color: hsl(240, 6%, 50%);
 }
 
 .attribution {
