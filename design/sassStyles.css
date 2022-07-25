@@ -111,6 +111,7 @@ body {
   content: image-set("../images/icon-arrow-down.svg");
   display: inline-block;
   margin: auto;
+  padding: 5px;
 }
 
 .active:after {
