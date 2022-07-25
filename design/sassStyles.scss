@@ -27,7 +27,7 @@ body {
     background-color: white;
     border-radius: 1rem;
     height: inherit;
-    width: 70%;
+    width: 80%;
 
     display: flex;
     flex-direction: row;
@@ -38,7 +38,7 @@ body {
     padding: 1rem;
 
     &__illustration {
-        width: 50%;
+        width: 45%;
         margin: 1rem 3rem 1rem 1rem;
 
         display: flex;
@@ -49,7 +49,7 @@ body {
     }
 
     &__text {
-        width: 50%;
+        width: 55%;
         margin: 1rem 1rem;
         color: hsl(237, 12%, 33%);
 
@@ -84,7 +84,8 @@ body {
     transition: 0.4s;
     cursor: pointer;
     text-align: left;
-
+    display:flex;
+    flex-direction: row;
 }
 
 .active,
@@ -92,14 +93,23 @@ body {
     color: hsl(237, 12%, 33%);
 }
 
-.accordion:after{
+.accordion:after {
     /*down arrow*/
-    content:image-set("../images/icon-arrow-down.svg");
+    content: image-set("../images/icon-arrow-down.svg");
+    display: inline-block;
+    margin: auto;
 }
 
-.active:after{
+.active:after {
     /*up arrow*/
-    content:'\U+2303';
+    content: image-set("../images/icon-arrow-down.svg");
+    display: inline-block;
+    transform: rotate(180deg);
+    /*
+        Inline elements can't be transformed, and pseudo elements are inline by 
+        default, so you must apply display: block or display: inline-block to 
+        transform them
+    */
 }
 
 .panel {

@@ -36,7 +36,7 @@ body {
   background-color: white;
   border-radius: 1rem;
   height: inherit;
-  width: 70%;
+  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -56,7 +56,7 @@ body {
 }
 
 .card__illustration {
-  width: 50%;
+  width: 45%;
   margin: 1rem 3rem 1rem 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -76,7 +76,7 @@ body {
 }
 
 .card__text {
-  width: 50%;
+  width: 55%;
   margin: 1rem 1rem;
   color: #4a4b5e;
 }
@@ -91,6 +91,13 @@ body {
   transition: 0.4s;
   cursor: pointer;
   text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .active,
@@ -102,11 +109,22 @@ body {
   /*down arrow*/
   content: -webkit-image-set("../images/icon-arrow-down.svg");
   content: image-set("../images/icon-arrow-down.svg");
+  display: inline-block;
+  margin: auto;
 }
 
 .active:after {
   /*up arrow*/
-  content: '\U+2303';
+  content: -webkit-image-set("../images/icon-arrow-down.svg");
+  content: image-set("../images/icon-arrow-down.svg");
+  display: inline-block;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  /*
+        Inline elements can't be transformed, and pseudo elements are inline by 
+        default, so you must apply display: block or display: inline-block to 
+        transform them
+    */
 }
 
 .panel {
