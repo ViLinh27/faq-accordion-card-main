@@ -127,10 +127,11 @@ body {
 }
 
 @media only screen and (max-width: 375px) {
-    body{
-        margin:auto;
-        padding:auto;
+    body {
+        margin: auto;
+        padding: auto;
     }
+
     .card {
         display: flex;
         flex-direction: column;
@@ -139,19 +140,25 @@ body {
         align-content: stretch;
 
         &__illustration {
-            height:20%;
+            height: 20%;
             width: 60%;
             margin: auto;
             padding: auto;
+        }
+
+        &__text {
+            width: 95%;
+            // margin: 1rem 1rem;
+            // color: hsl(237, 12%, 33%);
         }
     }
 
     .boxImg {
         position: absolute;
-        margin-right: 0;
-        margin-top: 0;
+        margin-right: 11rem;
+        margin-top: -4rem;
         z-index: 20;
-        width: 40%;
+        width: 30%;
     }
 
     .womanImg {
@@ -160,6 +167,7 @@ body {
         z-index: 0rem;
         clip: rect(0rem, 100rem, 100rem, 0rem);
         overflow-x: hidden;
-        width: 95%;
+        width: 70%;
+        margin-bottom: 8rem;
     }
 }

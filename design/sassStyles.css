@@ -189,12 +189,15 @@ body {
     margin: auto;
     padding: auto;
   }
+  .card__text {
+    width: 95%;
+  }
   .boxImg {
     position: absolute;
-    margin-right: 0;
-    margin-top: 0;
+    margin-right: 11rem;
+    margin-top: -4rem;
     z-index: 20;
-    width: 40%;
+    width: 30%;
   }
   .womanImg {
     position: absolute;
@@ -202,7 +205,8 @@ body {
     z-index: 0rem;
     clip: rect(0rem, 100rem, 100rem, 0rem);
     overflow-x: hidden;
-    width: 95%;
+    width: 70%;
+    margin-bottom: 8rem;
   }
 }
 /*# sourceMappingURL=sassStyles.css.map */
