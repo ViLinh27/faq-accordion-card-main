@@ -37,6 +37,8 @@ body {
   border-radius: 1rem;
   height: 60%;
   width: 80%;
+  -webkit-filter: drop-shadow(10px 20px 30px #30305a);
+          filter: drop-shadow(10px 20px 30px #30305a);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
