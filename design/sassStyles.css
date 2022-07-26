@@ -84,7 +84,15 @@ body {
 .boxImg {
   position: absolute;
   margin-right: 34rem;
-  margin-top: 9rem;
+  margin-top: 4rem;
+  z-index: 20;
+}
+
+.womanImg {
+  position: absolute;
+  margin-right: 15rem;
+  z-index: 10;
+  clip: rect(0rem, 100rem, 100rem, 6rem);
 }
 
 .accordion {

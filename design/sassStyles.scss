@@ -75,12 +75,18 @@ body {
     }
 }
 
-.boxImg{
+.boxImg {
     position: absolute;
-    margin-right:34rem;
-    margin-top: 9rem;
+    margin-right: 34rem;
+    margin-top: 4rem;
+    z-index: 20;
 }
-.womanImg{
+
+.womanImg {
+    position: absolute;
+    margin-right: 15rem;
+    z-index: 10;
+    clip: rect(0rem, 100rem, 100rem, 6rem);
 }
 
 .accordion {
@@ -92,7 +98,7 @@ body {
     transition: 0.4s;
     cursor: pointer;
     text-align: left;
-    display:flex;
+    display: flex;
     flex-direction: row;
 }
 
