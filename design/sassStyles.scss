@@ -26,7 +26,7 @@ body {
 .card {
     background-color: white;
     border-radius: 1rem;
-    height: 70%;
+    height: 60%;
     width: 80%;
 
     display: flex;
@@ -52,26 +52,6 @@ body {
         width: 55%;
         margin: 1rem 1rem;
         color: hsl(237, 12%, 33%);
-
-        // &__accordion {
-        //     cursor: pointer;
-        //     outline: none;
-        //     transition: 0.4s
-        //     ;
-        //     &__header {
-        //         font-size: 14px;
-        //         border-bottom: 1px;
-        //     }
-
-        //     &__content { /*in the accordion panel*/
-        //         padding: 0 1rem;
-        //         display: none;
-        //         overflow: hidden;
-
-        //         font-size: 12px;
-        //         color: hsl(240, 6%, 50%);
-        //     }
-        // }
     }
 }
 
@@ -84,7 +64,7 @@ body {
 
 .womanImg {
     position: absolute;
-    margin-right: 15rem;
+    margin-right: 16.5rem;
     z-index: 10;
     clip: rect(0rem, 100rem, 100rem, 6rem);
 }
@@ -144,4 +124,42 @@ body {
 .attribution a {
     color: hsl(228, 45%, 44%);
     /*links*/
+}
+
+@media only screen and (max-width: 375px) {
+    body{
+        margin:auto;
+        padding:auto;
+    }
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: stretch;
+
+        &__illustration {
+            height:20%;
+            width: 60%;
+            margin: auto;
+            padding: auto;
+        }
+    }
+
+    .boxImg {
+        position: absolute;
+        margin-right: 0;
+        margin-top: 0;
+        z-index: 20;
+        width: 40%;
+    }
+
+    .womanImg {
+        position: absolute;
+        margin-right: 0rem;
+        z-index: 0rem;
+        clip: rect(0rem, 100rem, 100rem, 0rem);
+        overflow-x: hidden;
+        width: 95%;
+    }
 }
