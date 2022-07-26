@@ -26,7 +26,7 @@ body {
 .card {
     background-color: white;
     border-radius: 1rem;
-    height: inherit;
+    height: 70%;
     width: 80%;
 
     display: flex;
@@ -73,6 +73,14 @@ body {
         //     }
         // }
     }
+}
+
+.boxImg{
+    position: absolute;
+    margin-right:34rem;
+    margin-top: 9rem;
+}
+.womanImg{
 }
 
 .accordion {

@@ -35,7 +35,7 @@ body {
 .card {
   background-color: white;
   border-radius: 1rem;
-  height: inherit;
+  height: 70%;
   width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -79,6 +79,12 @@ body {
   width: 55%;
   margin: 1rem 1rem;
   color: #4a4b5e;
+}
+
+.boxImg {
+  position: absolute;
+  margin-right: 34rem;
+  margin-top: 9rem;
 }
 
 .accordion {
