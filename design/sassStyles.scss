@@ -133,6 +133,7 @@ body {
     }
 
     .card {
+        position: relative;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -148,6 +149,7 @@ body {
 
         &__text {
             width: 95%;
+            text-align: center;
             // margin: 1rem 1rem;
             // color: hsl(237, 12%, 33%);
         }

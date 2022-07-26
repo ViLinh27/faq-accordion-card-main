@@ -167,6 +167,7 @@ body {
     padding: auto;
   }
   .card {
+    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -191,6 +192,7 @@ body {
   }
   .card__text {
     width: 95%;
+    text-align: center;
   }
   .boxImg {
     position: absolute;
