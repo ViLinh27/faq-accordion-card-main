@@ -141,6 +141,7 @@ body {
         align-items: center;
         align-content: stretch;
 
+
         &__illustration {
             height: 20%;
             width: 60%;
@@ -172,5 +173,6 @@ body {
         overflow-x: hidden;
         width: 70%;
         margin-bottom: 8rem;
+        filter: drop-shadow(0px 32px hsl(213, 64%, 91%));
     }
 }
