@@ -28,7 +28,7 @@ body {
     border-radius: 1rem;
     height: 60%;
     width: 80%;
-    filter: drop-shadow(10px 20px 30px hsl(239, 31%, 27%));
+    filter: drop-shadow(0px 20px 30px hsl(239, 31%, 27%));
 
     display: flex;
     flex-direction: row;
@@ -172,7 +172,7 @@ body {
         clip: rect(0rem, 100rem, 100rem, 0rem);
         overflow-x: hidden;
         width: 70%;
-        margin-bottom: 8rem;
-        filter: drop-shadow(0px 32px hsl(213, 64%, 91%));
+        margin-bottom: 9rem;
+        filter: drop-shadow(0px 32px hsl(230, 65%, 91%));
     }
 }
