@@ -41,7 +41,7 @@ The mobile view (375px width) of the card. Adjusting the image to mobile view wa
 
 ### Links
 
-- Repository URL: [Add solution URL here](https://your-solution-url.com)
+- Repository URL: [My repo](https://github.com/ViLinh27/faq-accordion-card-main)
 - Live Site URL: [live site](https://vilinh27.github.io/faq-accordion-card-main/)
 
 ## My process
@@ -53,24 +53,87 @@ The mobile view (375px width) of the card. Adjusting the image to mobile view wa
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
+The image formatting was the biggest obstacle in this challenge honestly. It was hard to figure out how to cut off the woman illustration correctly in desktop view and layer the box on top correctly. Plus in mobile view,
+I wasn't too solid on how drop shadow filters but some fiddling helped me figure that out.
 
 ```html
 <h1>Some HTML code I'm proud of</h1>
+
+<!--panel 1-->
+<button class="accordion">
+  <h3>How many team members can I invite?</h3>
+</button>
+
+<div class="panel">
+  <p>
+    You can invite up to 2 additional users on the Free plan. There is no limit
+    on team members for the Premium plan.
+  </p>
+</div>
+
+<p>w3schools was a lifesaver in learning about how the accordion worked</p>
 ```
 
 ```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
+.card {
+  background-color: white;
+  border-radius: 1rem;
+  height: 60%;
+  width: 80%;
+  filter: drop-shadow(0px 20px 30px hsl(239, 31%, 27%));
 
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+
+  padding: 1rem;
+
+  &__illustration {
+    width: 45%;
+    margin: 1rem 3rem 1rem 1rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  &__text {
+    width: 55%;
+    margin: 1rem 1rem;
+    color: hsl(237, 12%, 33%);
+  }
+}
+
+.womanImg {
+  position: absolute;
+  margin-right: 16.5rem;
+  z-index: 10;
+  clip: rect(0rem, 100rem, 100rem, 6rem);
+}
+
+.accordion:after {
+  /*down arrow*/
+  content: image-set("../images/icon-arrow-down.svg");
+  display: inline-block;
+  margin: auto;
+  padding: 5px;
+}
+
+.active:after {
+  /*up arrow*/
+  content: image-set("../images/icon-arrow-down.svg");
+  display: inline-block;
+  transform: rotate(180deg);
+  /*
+        Inline elements can't be transformed, and pseudo elements are inline by 
+        default, so you must apply display: block or display: inline-block to 
+        transform them
+    */
+}
 ```
 
 If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
